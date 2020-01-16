@@ -29,7 +29,12 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     MainWindow w;
+    
+#ifdef SLIDESHOW_EMBEDDED_TARGET
+    w.showFullScreen();
+#else
     w.show();
+#endif
 
     return a.exec();
 }

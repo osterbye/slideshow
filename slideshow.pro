@@ -38,3 +38,7 @@ FORMS    += mainwindow.ui
 
 RESOURCES += \
     slideshow.qrc
+    
+slideshowembedded {
+        DEFINES += SLIDESHOW_EMBEDDED_TARGET
+}
